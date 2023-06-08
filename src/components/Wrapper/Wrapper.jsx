@@ -1,6 +1,5 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-// import MainPage from "../../pages/MainPage/MainPage";
 import Header from "../Header/Header";
 import './Wrapper.css';
 

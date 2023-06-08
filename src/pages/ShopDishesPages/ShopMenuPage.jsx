@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 
 const ShopMenuPage = () => {
   const params = useParams();
-  const location = useLocation();
   const [data, setData] = useState([]);
 
   const cartData = useSelector(data => data.cart)
@@ -24,16 +23,8 @@ const ShopMenuPage = () => {
         const arr = Object.keys(data).map(key => {
           return {
             ...data[key], id: key,
-            // id: key,
-            // name: data[key].name
           };
         });
-        // const arr = Object.values(data).map(value => {
-        //   return {
-        //     id: value.id,
-        //     name: value.name
-        //   };
-        // });
         setData(arr);
       })
       .catch(error => console.log(error));
@@ -47,9 +38,6 @@ const ShopMenuPage = () => {
           currentShop={getCurrentShop()}
           data={data}
         />
-        {/* {data.map(item => (
-          <li key={item.id}>{item.name}</li>
-        ))} */}
       </ul>
     </div>
   );

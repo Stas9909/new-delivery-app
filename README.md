@@ -20,6 +20,6 @@ Your app is ready to be deployed!
 
 ### `npm run build` fails to minify
 
-to open prod version you have to follow the link: https://stas9909.github.io/new-delivery-app/shop/il-molino
+to open prod version you have to follow the link: https://stas9909.github.io/new-delivery-app
 
 server data is connected with Firebase
