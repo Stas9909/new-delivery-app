@@ -26,4 +26,17 @@ header {
 
 .link {
   text-decoration: none;
+  position: relative;
+}
+
+.link.highlighted::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: -13px;
+  top: 0;
+  background-color: green;
 }
