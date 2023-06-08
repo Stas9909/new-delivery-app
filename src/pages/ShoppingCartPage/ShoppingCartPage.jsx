@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ReactDOM from 'react-dom';
 import './ShoppingCartPage.css'
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
@@ -57,7 +56,7 @@ const ShoppingCartPage = () => {
   }
 
   const handleSubmit = (values, { setSubmitting, resetForm }) => {
-    // setSubmitting(true);
+    setSubmitting(true);
     const { name, email, phone, address } = values;
     const orderData = {
       name,
@@ -111,7 +110,7 @@ const ShoppingCartPage = () => {
         })}
         onSubmit={handleSubmit}
       >
-        {({ values, touched, setFieldValue, errors, isSubmitting }) => {
+        {({ values, touched, errors, isSubmitting }) => {
           return (
             <Form>
               <div className="formContainer">
