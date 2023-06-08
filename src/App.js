@@ -10,11 +10,11 @@ function App() {
     return (
         <>
             <Routes>
-                <Route path='/' element={<Wrapper />}>
-                    <Route path='/' element={<ShopPage />}>
-                        <Route path="shop/:id/" element={<ShopDishesPage />} />
+                <Route path='/new-delivery-app/' element={<Wrapper />}>
+                    <Route path='/new-delivery-app/' element={<ShopPage />}>
+                        <Route path="/new-delivery-app/shop/:id/" element={<ShopDishesPage />} />
                     </Route>
-                    <Route path='cart' element={<ShoppingCartPage />} />
+                    <Route path='/new-delivery-app/cart' element={<ShoppingCartPage />} />
                 </Route>
             </Routes>
         </>

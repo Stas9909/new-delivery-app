@@ -24,7 +24,7 @@ const FoodList = (props) => {
         data.map(item => (
           <li className="cartContainer" key={item.id}>
             <div className="imageContainer">
-              <img className="image" src={item.image} alt={data.name} />
+              <img className="image" src={`/new-delivery-app${item.image}`} alt={data.name} />
               <h2 className="dishName">{item.name}</h2>
               <p className="dishDescription">{item.description}</p>
             </div>
