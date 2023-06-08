@@ -26,11 +26,6 @@ const ShoppingCartPage = () => {
     };
   }, [orderSaved]);
 
-  // const getTotalPrice = () => {
-  //   const totalAmount = cartData.reduce((acc, item) => acc + item.price * item.quantity, 0);
-  //   return totalAmount;
-  // }
-
   const totalAmount = cartData.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
 
